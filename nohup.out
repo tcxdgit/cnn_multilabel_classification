@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "mq_cnnclassify.py", line 36, in <module>
+    bc = ClassifyCNNMQ(model_dir, '', 'nlp.classify.cnn.'+model_name+'.request.#')
+  File "mq_cnnclassify.py", line 18, in __init__
+    self.classify = Classify_CN(model_path, user=receive_key.split('.')[-1])
+  File "../singleton.py", line 5, in __call__
+    cls._instances[cls] = super(Singleton, cls).__call__(*args, **kwargs)
+  File "../cnn_multilabel_classification/cnnclassify.py", line 44, in __init__
+    classes_file = codecs.open(os.path.join(module_dir, "cn", "classes"), "r", "utf-8")
+  File "/usr/lib/python3.5/codecs.py", line 895, in open
+    file = builtins.open(filename, mode, buffering)
+FileNotFoundError: [Errno 2] No such file or directory: '../work_space/cmrc2018/module/cnn_multi_elmo/cn/classes'
