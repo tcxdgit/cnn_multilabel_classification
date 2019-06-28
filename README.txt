@@ -8,6 +8,6 @@ cnn_attention_model.py  textCNN+attention模型的graph(attention思想参见论
 data_helper.py  数据处理部分
 test.py     测试模型性能
 cnnclasssify.py     预测代码，输入分词后的句子
-mq_cnnclassify.py    serve部分，调用cnnclassify.py
+mq_cnnclassify.py    server部分，调用cnnclassify.py
 classify.py     client部分
 
